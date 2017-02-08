@@ -34,17 +34,19 @@ min.y <- min(y)
 
 saveGIF({
          for( i in 5:100 )
-         {
-          plot( x[i], y[i], pch=19, col="red", cex=2, xlim=c(min.x,max.x), ylim=c(min.y,max.y), main="Brownian Motion Made with saveGif"  )
-          }
-          },
+{
+plot( x[i], y[i], pch=19, col="red", cex=2,
+xlim=c(min.x,max.x), ylim=c(min.y,max.y),
+main="Brownian Motion Made with saveGif"  )
+}
+},
         movie.name = "brownian_motion_1.gif",
         interval = .1,
         ani.width = 800,
         ani.height = 800)
 ```
 
-![](./gifs/brownian_motion_1.gif "Brownian Motion 1")
+![](https://github.com/R-Class/lab-02-animations-christine-brown/blob/master/brownian_motion_1.gif?raw=true "Brownian Motion 1")
 
 ### Animate using im.convert
 
@@ -83,4 +85,4 @@ dir()
 unlink( "sample*.png")
 ```
 
-![](./gifs/brownian_motion_2.gif "Brownian Motion 2")
+![](https://github.com/R-Class/lab-02-animations-christine-brown/blob/master/brownian_motion_2.gif?raw=true "Brownian Motion 2")
